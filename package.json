@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest tests",
     "start": "node src/api/server",
-    "dev": "nodemon src/api/server"
+    "dev": "nodemon src/api/server",
+    "prestart": "npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all"
   },
   "keywords": [],
   "author": "",
